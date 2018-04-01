@@ -28,7 +28,7 @@ public class GoogleTest {
 
   @Test
   public void userCanSearch() {
-    driver.get("http://www.google.com/");
+    driver.get("http://www.baidu.com/");
     GooglePage page = PageFactory.initElements(driver, GooglePage.class);
     SearchResultsPage results = page.searchFor("Selenide");
     assertTrue(results.getResults().get(0).getText().startsWith("Selenide: concise UI tests in Java"));

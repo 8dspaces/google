@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class GoogleTest {
   @Test
   public void userCanSearch() {
-    GooglePage page = open("https://google.com/ncr", GooglePage.class);
+    GooglePage page = open("http://www.baidu.com/", GooglePage.class);
     SearchResultsPage results = page.searchFor("selenide");
     
     results.checkResultsSize(1);

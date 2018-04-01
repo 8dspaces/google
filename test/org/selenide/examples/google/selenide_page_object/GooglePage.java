@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.page;
 
 public class GooglePage {
   public SearchResultsPage searchFor(String text) {
-    $(By.name("q")).val(text).pressEnter();
+    $(By.name("wd")).val(text).pressEnter();
     return page(SearchResultsPage.class);
   }
 }
